@@ -30,12 +30,12 @@ window.addEventListener("scroll", onChange)
     {/* Content */}
     <div className="flex-1 flex flex-col overflow-hidden">
       {/* Navbar */}
-      <div className={`fixed ${scroll && "bg-black/50"} w-full shadow`}>
+      <div className={`fixed ${scroll && "bg-black/50"} w-full  py-2`}>
         <div className="container max-w-[1170px] mx-auto">
           <div className="flex justify-between items-center py-4 px-2">
             <img src="https://anpsthemes.com/constructo-demo-3/wp-content/uploads/2015/03/constructo-logo-yelow1.png" alt="" />
 
-            <ul className="mt-4 flex gap-10">
+            <ul className=" flex gap-10">
           
             <Link to={"/home"} className="block text-white font-semibold hover:text-indigo-400">
               Home
