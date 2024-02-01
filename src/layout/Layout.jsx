@@ -4,14 +4,12 @@ import Footer from '../component/Footer/Footer'
 import { Link, Outlet } from 'react-router-dom'
 
 
-const Layout = () => {
+const Layout = ({children}) => {
   return (
     <div>          
-    <Link to="/login">Login</Link>
-        <br />
-        <Link to="/signup">Signup</Link>
-        {Outlet}
-    
+    <Header />
+        {children}
+    <Footer />
     </div>
   )
 }
