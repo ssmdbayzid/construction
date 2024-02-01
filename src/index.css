@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[data-theme = 'light'] {
+    background: #cbd5e1;
+    --bg-color: #ffff;
+    --text-color: #111827;
+    --para-color: #374151;
+    --color-bkg : 210deg 40% 98%;
+    --color-content: #ffffff;
+    --color-accent1: 288deg 95.8% 90.6%;
+    --color-acccent2: 168deg 83.8% 78.2%;
+}
+
+[data-theme = 'dark'] {
+    background: #121212;
+    --bg-color: #1f2937;
+    --text-color: #ffffff;
+    --para-color: #e5e7eb;
+    --color-bkg : 217deg 32.6% 17.5%;
+    --color-content: #1f2937;
+    --color-accent1: 288deg 95.8% 60.6%;
+    --color-acccent2: 168deg 83.8% 48.2%;
+}
+/* 
+@layer base {
+    :root {
+        --color-bkg : 217deg 32.6% 17.5%;
+        --color-content: 210deg 40% 98%;
+        --color-accent1: 288deg 95.8% 60.6%;
+        --color-acccent2: 168deg 83.8% 48.2%;
+    }
+} */
