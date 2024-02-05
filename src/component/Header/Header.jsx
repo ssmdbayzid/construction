@@ -9,6 +9,7 @@ import 'swiper/css/pagination';
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import logo from '../../assects/BMCLlogo.svg'
 
 const Header = () => {
 const [open, setOpen] = useState(false)
@@ -24,10 +25,12 @@ const onChange = () =>{
 window.addEventListener("scroll", onChange)
 
   return (
-    <div className={`fixed z-[9999] ${scroll && "bg-black/50"} w-full  py-2`}>
-<div className="container max-w-[1170px] mx-auto">
-  <div className="flex justify-between items-center py-4 px-2">
-    <img src="https://anpsthemes.com/constructo-demo-3/wp-content/uploads/2015/03/constructo-logo-yelow1.png" alt="" />
+    <div className={`fixed z-[9999] ${scroll && "bg-black/50 pb-2"} w-full  `}>
+<div className="relative container max-w-[1170px] mx-auto">
+  <div className="flex justify-between items-center  px-2">
+    <div className="relative  bg-white px-2 py-2 rounded-b-full">
+    <img src={logo} alt="" className='h-12 w-18' />
+    </div>
 
     <ul className=" hidden md:flex gap-10">
   
